@@ -1,0 +1,115 @@
+/* Elvin Alan Pratama | 2010631170065 */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mukta:wght@700&family=Roboto:wght@200&display=swap');
+
+:root {
+    --primary-clr: dodgerblue;
+    --secondary-clr : blue;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 90%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 30px;
+    width: 600px;
+    box-sizing: border-box;
+}
+
+.page-title {
+    margin-bottom: 10px;
+}
+
+.page-title h1{
+    width: 102%;
+    text-align: center;
+    font-size: 180%;
+    font-weight: bolder;
+}
+
+.input-field{
+    margin-bottom: 15px;
+}
+
+.input-field #npm, .input-field #nama, .input-field #alamat {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 25px;
+    border: 2px solid #E5E5E5;
+    border-radius: 5px;
+    padding: 5px;
+    outline-color: var(--primary-clr);
+}
+
+.input-field #alamat {
+    height: 45px;
+}
+
+/* Mengubah font dan ukuran pada text field halaman */
+.input-field textarea {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 90%;
+}
+
+/* Memberi margin di atas opsi laki-laki */
+.input-field input[value=Laki-laki] {
+    margin-top: 10px;
+}
+
+/* Memberi warna dna jarak pada radio button jenis kelamin */
+.input-field input[type="radio"]{
+    margin-right: 7px;
+    accent-color: var(--primary-clr);
+ }
+
+.input-field #jurusan {
+    width: 103%;
+    margin-top: 10px;
+    height: 40px;
+    background-color: white;
+    appearance: none;
+    border: 2px solid #E5E5E5;
+    border-radius: 5px;
+    padding: 5px;
+    outline-color: var(--primary-clr);
+    overflow: hidden;
+}
+
+/* Icon tombol untuk option value pada jurusan */
+.input-field .material-icons {
+    color: grey;
+    top: 1.7em;
+    float: right;
+    width: 1em;
+    height: 1em;
+    position: relative;
+    pointer-events: none;
+}
+
+.button {
+    background-color: var(--primary-clr);
+    border: none;
+    border-radius: 3px;
+    padding: 7px;
+    height: 32px;
+    width: 75px;
+    color: white;
+    transition: 0.1s;
+}
+
+.button:active {
+    background-color: var(--secondary-clr);
+    box-shadow: 1px 1px 5px 2px var(--secondary-clr);
+}
