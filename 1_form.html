@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Mahasiswa Baru</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <!-- Elvin Alan Pratama | 2010631170065 -->
+    <div class="container">
+        <div class="page-title">
+            <h1>Pendaftaran Mahasiswa Baru</h1>
+        </div>
+        <div class="content-form">
+            <form action="#" method="POST">
+                <div class="input-field">
+                    <label for="npm">NPM (Nomor Pokok Mahasiswa)</label>
+                    <br>
+                    <input type="text" name="npm" id="npm" maxlength="13" autofocus>
+                </div>
+                <div class="input-field">
+                    <label for="nama">Nama Lengkap</label>
+                    <br>
+                    <input type="text" name="nama" id="nama" maxlength="70" autofocus>
+                </div>
+                <div class="input-field">
+                    <label for="alamat">Alamat</label>
+                    <br>
+                    <textarea name="alamat" id="alamat" cols="30" maxlength="150" autofocus></textarea>
+                </div>
+                <div class="input-field">
+                    <label for="jk">Jenis Kelamin</label>
+                    <br>
+                    <input type="radio" name="jk" id="jk" value="Laki-laki">Laki-laki
+                    <br>
+                    <input type="radio" name="jk" id="jk" value="Perempuan">Perempuan
+                </div>
+                <div class="input-field">
+                    <label for="jurusan">Program Studi</label>
+                    <span class="material-icons">expand_more</span>
+                    <select name="jurusan" id="jurusan">
+                        <option value="Teknik Informatika">Teknik Informatika</option>
+                        <option value="Sistem Informasi">Sistem Informasi</option>
+                        <option value="Teknik Filsafat">Teknik Filsafat</option>
+                    </select>
+                </div>
+                <input class="button" type="submit" value="Tambah">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

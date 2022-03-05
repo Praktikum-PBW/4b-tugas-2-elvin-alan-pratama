@@ -1,0 +1,60 @@
+/* Elvin Alan Pratama | 2010631170065 */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mukta:wght@700&family=Roboto:wght@200&display=swap');
+
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container {
+    margin: 20px;
+}
+
+.page-title {
+    font-size: 160%;
+    margin-bottom: 8px;
+}
+
+table {
+    margin-top: 0;
+    font-size: 90%;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.content-table th, .content-table tr, .content-table td {
+    border: 1.25px solid #E5E5E5;
+    padding: 10px;
+}
+
+.content-table th {
+    text-shadow: 0.5px 0px 0px black;
+} 
+
+/* Untuk table dengan nama */
+.content-table td #nama {
+    text-align: left;
+}
+
+/* Mengatur responsivitas tabel */
+@media (max-width: 1000px) {
+    .content-table th, .content-table tr, .content-table td {
+        padding: 0px;
+    }
+
+    .container {
+        margin: 0px;
+    }
+}
+
+@media (max-width: 500px) {
+    .content-table th, .content-table tr, .content-table td {
+        padding: 0px;
+    }
+
+    .container {
+        margin: 0px;
+    }
+}
